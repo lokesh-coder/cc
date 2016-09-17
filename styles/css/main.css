@@ -401,7 +401,6 @@ table.table .pretty.inline {
 #inline-form {
   border: 1px solid #cfd8d8;
   background: #fff;
-<<<<<<< HEAD
   padding: 14px;
   font-family: Rubik; }
   #inline-form h3 {
@@ -414,17 +413,6 @@ table.table .pretty.inline {
     font-size: 12px;
     opacity: .7;
     font-weight: 500; }
-=======
-  padding: 14px; }
-  #inline-form h3 {
-    text-transform: uppercase;
-    margin: 11px 9px 18px;
-    font-size: 20px; }
-  #inline-form label {
-    text-transform: uppercase;
-    font-size: 12px;
-    opacity: .7; }
->>>>>>> 2174a593c0745e35f314fe75b550d7bde88b9197
   #inline-form .form-control {
     box-shadow: none;
     border-radius: 2px;
@@ -432,7 +420,6 @@ table.table .pretty.inline {
     min-height: auto;
     height: auto;
     border-width: 1px; }
-<<<<<<< HEAD
   #inline-form .types span {
     position: relative;
     border: 2px solid transparent;
@@ -455,16 +442,6 @@ table.table .pretty.inline {
     vertical-align: middle;
     /* border: 2px solid transparent; */
     border-radius: 4px; }
-=======
-  #inline-form .types img {
-    vertical-align: middle;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    margin-right: 20px;
-    cursor: pointer; }
-    #inline-form .types img:hover {
-      border-color: #627cb6; }
->>>>>>> 2174a593c0745e35f314fe75b550d7bde88b9197
   #inline-form .help .mdi {
     font-size: 15px;
     margin: 0 10px;
