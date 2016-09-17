@@ -132,6 +132,10 @@ body {
             line-height: 1;
         }
 
+        .name {
+            text-transform: capitalize;
+        }
+
         .name i {
             font-size: 22px;
             margin-right: 5px;
@@ -169,15 +173,16 @@ body {
     }
 
     .title {
-        font-family: Montserrat;
-        font-size: 13px;
+        font-family: Rubik;
+        /* font-weight: 500; */
+        font-size: 14px;
         margin-bottom: 20px;
-        padding: 17px 20px;
+        padding: 20px 20px;
         letter-spacing: 0;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         border-bottom: 1px solid #627cb6;
         background: #627cb6;
-        color: rgba(255, 255, 255, .79);
+        color: rgba(255, 255, 255, 0.97);
         border-bottom: 5px solid #f1f4f4;
     }
 
@@ -202,9 +207,11 @@ body {
         opacity: .9;
         text-align: left;
         flex: 1 100%;
+        text-transform: capitalize;
 
         .type {
             font-size: 15px;
+            text-transform: uppercase;
         }
 
         .amount {
@@ -261,6 +268,9 @@ body {
     flex-direction: column;
     align-items: inherit;
     justify-content: space-between;
+    border-radius: 5px;
+    overflow: hidden;
+    text-transform: capitalize;
 }
 
 .box {
@@ -288,7 +298,7 @@ body {
 
 .button-area {
     text-align: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 button, .button {
@@ -326,7 +336,11 @@ button, .button {
     }
 
     &.icon.big {
-        padding: 10px 8px 9px;
+        padding: 10px 16px 9px;
+
+        .mdi {
+            font-size: 21px;
+        }
     }
 
     .mdi {

@@ -31,6 +31,9 @@
 .table {
     border: 1px solid #e8edef;
     background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 0px #bfc7ca;
 
     >thead>tr {
         background: #627cb6;
@@ -39,9 +42,16 @@
 
     >thead>tr>th {
         border-bottom-width: 1px;
-        text-transform: uppercase;
-        padding: 13px;
-        border-bottom-color:#627cb6;
+        text-transform: capitalize;
+        padding: 20px 20px;
+        border-bottom-color: rgb(98, 124, 182);
+        font-family: rubik;
+        font-weight: 400;
+        color: rgba(255, 255, 255, .97);
+    }
+
+    >tbody {
+        border-top: 3px solid #cfd8d8;
     }
 
     >tbody>tr>td {

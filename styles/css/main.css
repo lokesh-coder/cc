@@ -58,15 +58,23 @@
 
 .table {
   border: 1px solid #e8edef;
-  background: #fff; }
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 0px #bfc7ca; }
   .table > thead > tr {
     background: #627cb6;
     color: #fff; }
   .table > thead > tr > th {
     border-bottom-width: 1px;
-    text-transform: uppercase;
-    padding: 13px;
-    border-bottom-color: #627cb6; }
+    text-transform: capitalize;
+    padding: 20px 20px;
+    border-bottom-color: #627cb6;
+    font-family: rubik;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.97); }
+  .table > tbody {
+    border-top: 3px solid #cfd8d8; }
   .table > tbody > tr > td {
     font-size: 13px;
     font-family: montserrat;
@@ -170,6 +178,8 @@ body {
       font-size: 17px;
       margin: 0 0 0 15px;
       line-height: 1; }
+    .main-content ul.simple .name {
+      text-transform: capitalize; }
     .main-content ul.simple .name i {
       font-size: 22px;
       margin-right: 5px;
@@ -197,15 +207,16 @@ body {
       justify-content: flex-start;
       flex: 1; }
   .main-content .title {
-    font-family: Montserrat;
-    font-size: 13px;
+    font-family: Rubik;
+    /* font-weight: 500; */
+    font-size: 14px;
     margin-bottom: 20px;
-    padding: 17px 20px;
+    padding: 20px 20px;
     letter-spacing: 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-bottom: 1px solid #627cb6;
     background: #627cb6;
-    color: rgba(255, 255, 255, 0.79);
+    color: rgba(255, 255, 255, 0.97);
     border-bottom: 5px solid #f1f4f4; }
   .main-content .name {
     display: block;
@@ -223,9 +234,11 @@ body {
   .main-content .detail {
     opacity: .9;
     text-align: left;
-    flex: 1 100%; }
+    flex: 1 100%;
+    text-transform: capitalize; }
     .main-content .detail .type {
-      font-size: 15px; }
+      font-size: 15px;
+      text-transform: uppercase; }
     .main-content .detail .amount {
       font-size: 15px; }
     .main-content .detail .onname {
@@ -266,7 +279,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: inherit;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-radius: 5px;
+  overflow: hidden;
+  text-transform: capitalize; }
 
 .box ul {
   margin: 0;
@@ -284,7 +300,7 @@ body {
 
 .button-area {
   text-align: center;
-  margin: 20px; }
+  margin: 10px; }
 
 button, .button {
   font-family: 'Montserrat';
@@ -310,7 +326,9 @@ button, .button {
     padding: 11px 10px;
     vertical-align: bottom; }
   button.icon.big, .button.icon.big {
-    padding: 10px 8px 9px; }
+    padding: 10px 16px 9px; }
+    button.icon.big .mdi, .button.icon.big .mdi {
+      font-size: 21px; }
   button .mdi, .button .mdi {
     font-size: 16px;
     position: relative;
