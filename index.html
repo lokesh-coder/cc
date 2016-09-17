@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+       <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title>Title Page</title>
+         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Montserrat|Rubik:400,500" rel="stylesheet">
+         <link rel="stylesheet" href="./bower_components/mdi/css/materialdesignicons.min.css">
+         <link rel="stylesheet" href="./bower_components/paymentfont/css/paymentfont.min.css">
+         <link rel="stylesheet" href="./bower_components/pretty-checkbox/src/pretty.min.css">
+        <link rel="stylesheet" href="./styles/css/main.css"/>
+       </head>
+       <body ng-controller="mainController">
+              <nav class="navbar navbar-default" role="navigation">
+                <div class="container">
+                  <div class="navbar-header">
+                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                         </button>
+                         <a class="navbar-brand" href="#">
+                           <img src="https://mychristiancare.org/uploadedImages/My_Christian_Care/_MISC/ccm-logo.jpg" height="62" alt="">
+                         </a>
+                  </div>
+                  <div class="collapse navbar-collapse navbar-ex1-collapse">
+                         <ul class="nav navbar-nav">
+                          <li><a href="#">Our Ministry</a></li>
+                          <li><a href="#">Medi-Share</a></li>
+                          <li><a href="#">Prayerstream</a></li>
+                          <li><a href="#">Contact us</a></li>
+                         </ul>
+                         <ul class="nav navbar-nav navbar-right">
+                          <li><a href="#">Hi, John</a></li>
+                         </ul>
+                  </div>
+                </div>
+              </nav>
+
+            <div id="menu-header">
+              <div class="container">
+                <div class="title">
+                  <i class="mdi mdi-wallet"></i> payment portal
+                </div>
+                <div class="menu">
+                  <ul ng-if="mainmenuactive">
+                    <li ui-sref-active="active" ui-sref="tabone">Account overview</li>
+                    <li ui-sref-active="active" ui-sref="tabtwo">payment / share history</li>
+                    <li ui-sref-active="active" ui-sref="tabthree">eft / autopay</li>
+                    <li ui-sref-active="active" ui-sref="tabfour">share notices</li>
+                    <li ui-sref-active="active" ui-sref="tabfive">annual household portion (AHP)</li>
+                  </ul>
+                    <ul ng-if="submenuactive">
+                      <li ui-sref-active="active" ui-sref="bankacc">Bank account</li>
+                      <li ui-sref-active="active" ui-sref="credit">Credit card</li>
+                      <li ui-sref-active="active" ui-sref="check">One-Time check</li>
+                      <li class="back" ng-click="payclose()"> <i class="mdi mdi-arrow-left"></i>  back to payment portal overview</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div id="content">
+              <div class="container">
+                <div class="main-content">
+                     <ui-view></ui-view>
+                </div>
+              </div>
+            </div>
+
+            <script src="//code.jquery.com/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="./bower_components/angular/angular.min.js"></script>
+            <script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+            <script src="./scripts/app/app.js"></script>
+       </body>
+</html>

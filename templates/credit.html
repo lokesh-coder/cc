@@ -1,0 +1,143 @@
+<div class="modal-box clearfix">
+  <div class="col-md-4">
+    <div class="highlight-btn-holder">
+    <button class="addcre highlight"><i class="mdi mdi-plus"></i> Add new card</button>
+    </div>
+      <div id="inline-primary-form">
+        <p>click to edit an existing card</p>
+        <ul class="cards">
+          <li class="cc-card inline"> <i class="pf pf-maestro"></i> Theresa's Maestro card</li>
+          <li class="cc-card inline"> <i class="pf pf-visa"></i> Visa - XX4237</li>
+        </ul>
+      </div>
+  </div>
+  <div class="col-md-8">
+    <div id="inline-form">
+      <form role="form">
+             <div class="clearfix">
+
+                 <h3>Add New card</h3>
+               <div class="col-md-12">
+                 <div class="form-group">
+                  <label for="">card type</label>
+                  <div class="types">
+                    <span><img src="../assets/images/Visa.png" alt="" ng-click="type1=true;"></span>
+                    <span class="active"><img src="../assets/images/MasterCard.png" alt=""></span>
+                    <span><img src="../assets/images/Discover.png" alt=""></span>
+                    <span><img src="../assets/images/American Express (Inverted).png" alt=""></span>
+                  </div>
+                 </div>
+               </div>
+             </div>
+            <div class="clearfix">
+              <div class="col-md-6">
+                <div class="form-group">
+                 <label for="">card number</label>
+                 <input type="text" class="form-control" placeholder="987654321">
+                </div>
+              </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                   <label for="">expiration month</label>
+                   <select class="form-control">
+                     <option value="">Jan</option>
+                     <option value="">Feb</option>
+                     <option value="">Mar</option>
+                     <option value="">Apr</option>
+                     <option value="">May</option>
+                     <option value="">Jun</option>
+                     <option value="">Jul</option>
+                     <option value="">Aug</option>
+                     <option value="">Sep</option>
+                     <option value="">Oct</option>
+                     <option value="">Nov</option>
+                     <option value="">Dec</option>
+                   </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                   <label for="" class="vh">expiration year</label>
+                   <select class="form-control">
+                     <option value="">2020</option>
+                     <option value="">2019</option>
+                     <option value="">2018</option>
+                     <option value="">2017</option>
+                     <option value="">2016</option>
+                   </select>
+                  </div>
+                </div>
+            </div>
+           <div class="clearfix">
+             <div class="col-md-6">
+               <div class="form-group">
+                <label for="">card holders name</label>
+                <input type="text" class="form-control" placeholder="John Smith">
+               </div>
+             </div>
+               <div class="col-md-6">
+                 <div class="form-group">
+                  <label for="">secutity code</label>
+                  <input type="text" class="form-control" placeholder="123">
+                 </div>
+               </div>
+           </div>
+          <div class="clearfix">
+            <div class="col-md-12">
+              <div class="form-group">
+               <label for="">billing address</label>
+               <input type="text" class="form-control" placeholder="123 Main st">
+              </div>
+            </div>
+          </div>
+          <div class="clearfix">
+            <div class="col-md-6">
+              <div class="form-group">
+               <label for="">billing city</label>
+               <input type="text" class="form-control" placeholder="Melbourne">
+              </div>
+            </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                 <label for="">billing state</label>
+                 <select class="form-control">
+                   <option value="">FL</option>
+                 </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                 <label for="" class="vh">billing zip</label>
+                 <select class="form-control">
+                   <option value="">32934</option>
+                 </select>
+                </div>
+              </div>
+          </div>
+          <div class="clearfix">
+            <div class="col-md-6">
+              <div class="form-group">
+               <label for="">account nickname</label>
+               <input type="text" class="form-control" placeholder="Theresa's Visa card">
+              </div>
+            </div>
+          </div>
+          <div class="clearfix">
+            <div class="col-md-6">
+              <div class="form-group">
+               <div class="pretty inline primary plain">
+                   <input type="checkbox"/>
+                   <label><i class="mdi mdi-check"></i> Default payment method</label>
+                 </div>
+              </div>
+            </div>
+          </div>
+            <div class="form-submit text-right">
+              <button type="submit" class="action default inline">cancel</button>
+               <button type="submit" class="action hightlight inline">save</button>
+            </div>
+      </form>
+    </div>
+
+  </div>
+</div>
