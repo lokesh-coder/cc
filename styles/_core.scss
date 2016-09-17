@@ -182,7 +182,11 @@ body {
         /* text-transform: uppercase; */
         border-bottom: 1px solid #627cb6;
         background: #627cb6;
+<<<<<<< HEAD
         color: rgba(255, 255, 255, .97);
+=======
+        color: rgba(255, 255, 255, 0.97);
+>>>>>>> 2174a593c0745e35f314fe75b550d7bde88b9197
         border-bottom: 5px solid #f1f4f4;
     }
 
@@ -445,20 +449,29 @@ table.table .pretty {
     border: 1px solid #cfd8d8;
     background: #fff;
     padding: 14px;
+<<<<<<< HEAD
     font-family: Rubik;
+=======
+>>>>>>> 2174a593c0745e35f314fe75b550d7bde88b9197
 
     h3 {
         text-transform: uppercase;
         margin: 11px 9px 18px;
         font-size: 20px;
+<<<<<<< HEAD
         font-family: BrandonGrotesque-Regular;
+=======
+>>>>>>> 2174a593c0745e35f314fe75b550d7bde88b9197
     }
 
     label {
         text-transform: uppercase;
         font-size: 12px;
         opacity: .7;
+<<<<<<< HEAD
         font-weight: 500;
+=======
+>>>>>>> 2174a593c0745e35f314fe75b550d7bde88b9197
     }
 
     .form-control {
@@ -470,6 +483,7 @@ table.table .pretty {
         border-width: 1px;
     }
 
+<<<<<<< HEAD
     .types {
         span {
             position: relative;
@@ -499,6 +513,17 @@ table.table .pretty {
             vertical-align: middle;
             /* border: 2px solid transparent; */
             border-radius: 4px;
+=======
+    .types img {
+        vertical-align: middle;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        margin-right: 20px;
+        cursor: pointer;
+
+        &:hover {
+            border-color: #627cb6;
+>>>>>>> 2174a593c0745e35f314fe75b550d7bde88b9197
         }
     }
 
