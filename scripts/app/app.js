@@ -3,40 +3,40 @@ angular.module('App',['ui.router'])
   var tabone = {
     name: 'tabone',
     url: '/tabone',
-    templateUrl: '../../templates/tabone.html'
+    templateUrl: './templates/tabone.html'
   }
 
   var tabtwo = {
     name: 'tabtwo',
     url: '/tabtwo',
-    templateUrl: '../../templates/tabtwo.html'
+    templateUrl: './templates/tabtwo.html'
   }
 
   var tabthree = {
     name: 'tabthree',
     url: '/tabthree',
-    templateUrl: '../../templates/tabthree.html'
+    templateUrl: './templates/tabthree.html'
   }
 
     var tabfour = {
       name: 'tabfour',
       url: '/tabfour',
-      templateUrl: '../../templates/tabfour.html'
+      templateUrl: './templates/tabfour.html'
     }
       var credit = {
         name: 'credit',
         url: '/credit',
-        templateUrl: '../../templates/credit.html'
+        templateUrl: './templates/credit.html'
       }
       var bankacc = {
         name: 'bankacc',
         url: '/bankacc',
-        templateUrl: '../../templates/bankacc.html'
+        templateUrl: './templates/bankacc.html'
       }
       var check = {
         name: 'check',
         url: '/check',
-        templateUrl: '../../templates/check.html'
+        templateUrl: './templates/check.html'
       }
 
   $stateProvider.state(tabone);
